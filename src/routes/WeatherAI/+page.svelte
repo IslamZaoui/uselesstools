@@ -28,24 +28,24 @@
 <div class="container h-full mx-auto p-4 flex justify-center items-center">
 	<div class="flex flex-col items-center gap-2 w-full">
 		{#if validate}
-			<div class="w-[200px] text-center flex flex-col gap-3">
+			<div class="w-[300px] text-center flex flex-col gap-3">
 				{#await checkWeather()}
 					<ProgressBar label="Progress Bar" max={1000} value={progressValue} />
 					<span>{comment}</span>
 				{:then x}
-					<strong class='text-2xl'>مش عارف شوف وحدك</strong>
+					<strong class='text-4xl'>🤣 مش عارف شوف وحدك</strong>
 				{/await}
 			</div>
 		{:else}
-			<h1 class="h1 text-2xl">اداة حالة الطقس</h1>
-			<small>كشف حالة طقس بذكاء الاصطناعي</small>
-			<form>
+			<h1 class="h1 text-4xl">اداة حالة الطقس</h1>
+			<small class='text-lg text-gray-400'>كشف حالة طقس بذكاء الاصطناعي</small>
+			<form on:submit|preventDefault={() => (validate = true)}>
 				<label class="label" dir="rtl">
 					<span>ادخل ولايتك</span>
-					<input class="input rounded" type="text" placeholder="مثلا: البليدة" />
+					<input class="input rounded" type="text" min="3" placeholder="مثلا: البليدة" />
 					<button
 						class="btn variant-ghost-secondary rounded hover:variant-filled-secondary"
-						on:click={() => (validate = true)}>تحقق</button
+						type="submit">تحقق</button
 					>
 				</label>
 			</form>
