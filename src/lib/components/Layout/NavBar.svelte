@@ -21,7 +21,7 @@
 	<svelte:fragment slot="trail">
 		<a
 			class="btn-icon"
-			href="https://github.com/skeletonlabs/skeleton"
+			href="https://github.com/IslamZaoui/uselesstools"
 			target="_blank"
 			rel="noreferrer"
 		>
