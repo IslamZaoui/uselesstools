@@ -8,4 +8,3 @@ Just for Trolling
 
  - [Sveltekit](https://kit.svelte.dev/)
  - [Skeleton UI Library](https://skeleton.dev/)
-
