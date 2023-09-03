@@ -5,13 +5,13 @@
 <nav class="bg-surface-800 h-full w-[150px]">
 	<div class=" flex flex-col gap-2 p-3 items-center">
 		<a
-			class="btn variant-{$page.data.url === '/' ? 'filled' : 'ghost'}-primary rounded w-full"
+			class="btn {$page.data.url === '/' ? 'variant-filled-primary' : 'variant-ghost-primary'} rounded w-full"
 			href="/">صفحة الرئيسية</a
 		>
 		<a
-			class="btn variant-{$page.data.url === '/WeatherAI'
-				? 'filled'
-				: 'ghost'}-primary rounded w-full"
+			class="btn {$page.data.url === '/WeatherAI'
+				? 'variant-filled-primary'
+				: 'variant-ghost-primary'} rounded w-full"
 			href="/WeatherAI">حالة الطقس</a
 		>
 	</div>
